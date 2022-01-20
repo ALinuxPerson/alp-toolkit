@@ -19,7 +19,7 @@ pub mod log {
         eprintln!("{} {first_line}", PROLOGUE.bold().fg::<C>());
 
         for line in lines {
-            eprintln!("{} {line}", PROLOGUE_CONTINUATION.bold().fg::<C>());
+            eprintln!("{} {line}", PROLOGUE_CONTINUATION.bold());
         }
     }
 
