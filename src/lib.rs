@@ -1,3 +1,4 @@
+#[cfg(feature = "log")]
 #[macro_use]
 pub mod log {
     use std::fmt;
