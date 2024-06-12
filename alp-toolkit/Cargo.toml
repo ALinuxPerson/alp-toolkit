@@ -9,4 +9,5 @@ edition = "2021"
 log = []
 
 [dependencies]
+alptk-log = { version = "0.1.0", path = "../log" }
 owo-colors = "4.0.0"
