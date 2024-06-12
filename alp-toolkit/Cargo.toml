@@ -6,7 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-log = []
+log = ["dep:alptk-log"]
+config = ["dep:alptk-config"]
+location = ["dep:alptk-location"]
+confloc = ["config", "location", "dep:alptk-config-location"]
 
 [dependencies]
-alptk-log = { version = "0.1.0", path = "../log" }
+alptk-config = { version = "0.1.0", path = "../config", optional = true }
+alptk-config-location = { version = "0.1.0", path = "../confloc", optional = true }
+alptk-location = { version = "0.1.0", path = "../location", optional = true }
+alptk-log = { version = "0.1.0", path = "../log", optional = true }
