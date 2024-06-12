@@ -9,4 +9,4 @@ edition = "2021"
 log = []
 
 [dependencies]
-owo-colors = "3.2.0"
+owo-colors = "4.0.0"
